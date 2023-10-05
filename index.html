@@ -56,43 +56,65 @@
         <h2>Strona Główna</h2>
 		<img src="fcb3.png" alt="KLUB" style="width: 1300px; height: 1300px;">
 	    
-	      <table>
-            <thead>
-                <tr>
-                    <th>Zawodnik</th>
-                    <th>Pozycja</th>
-                    <th>Narodowość</th>
-                    <th>Kontrakt</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Lewandowski</td>
-                    <td>Napastnik</td>
-                    <td>Polska</td>
-                    <td>30 cze 2026</td>
-                </tr>
-                <tr>
-                    <td>Araujo</td>
-                    <td>Obrońca</td>
-                    <td>Urugwaj</td>
-                    <td>30 cze 2023</td>
-                </tr>
-                <tr>
-                    <td>Ter Stegen</td>
-                    <td>Bramkarz</td>
-                    <td>Niemcy</td>
-                    <td>30 cze 2028</td>
-                </tr>
-                <tr>
-                    <td>Pedri</td>
-                    <td>Pomocnik</td>
-                    <td>Hiszpania</td>
-                    <td>30 cze 2026</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+	     <style>
+        table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #00FFFF;
+        }
+    </style>
+</head>
+	<table>
+    <thead>
+        <tr>
+            <th>Zawodnik</th>
+            <th>Pozycja</th>
+            <th>Narodowość</th>
+            <th>Wartość rynkowa</th>
+	    <th>Kontrakt</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="1">Lewandowski</td>
+            <td>Napastnik</td>
+            <td>Polska</td>
+            <td>30 mln</td>
+	    <td>30 cze 2026</td>
+        </tr>
+        <tr>
+           <td rowspan="2">Ter Stegen</td>
+            <td>Bramkarz</td>
+            <td>Niemcy</td>
+            <td>35 mln</td>
+	    <td>30 cze 2028</td>
+        </tr>
+	<tr>
+            <td rowspan="3">Araujo</td>
+            <td>Obrońca</td>
+            <td>Urugwaj</td>
+            <td>70 mln</td>
+	    <td>30 cze 2026</td>
+        </tr>
+        <tr>
+            <td rowspan="4">Pedri</td>
+            <td>Pomocnik</td>
+            <td>Hiszpania</td>
+            <td>100 mln</td>
+	    <td>30 cze 2026</td>
+        </tr>
+    </tbody>
+</table>
     <footer>
         <p>Tutaj znajdziesz informacje o naszej druzynie.</p>
     </section>
