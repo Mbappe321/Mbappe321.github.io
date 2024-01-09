@@ -3,146 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FCB</title>
+    <title>Świąteczna Strona</title>
     <style>
-        /* Dodaj stylizację według potrzeb */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f7f7f7;
         }
+
         header {
-            background-color: #808080;
-            color: blue;
+            background-color: #d9534f;
+            color: #fff;
             text-align: center;
             padding: 20px;
         }
+
         nav {
-            background-color: #444;
-            color: white;
-            text-align: center;
-            padding: 10px;
+            background-color: #333;
+            overflow: hidden;
         }
+
         nav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
             text-decoration: none;
-            color: white;
-            margin: 10px;
         }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
         section {
             padding: 20px;
         }
+
         footer {
             background-color: #333;
-            color: white;
+            color: #fff;
             text-align: center;
             padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .gallery img {
+            width: 30%;
+            margin: 10px;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
+
     <header>
-        <img src="fcb.png" alt="Logo Klubu" style="width: 0px; height: 0px;">
-        <h1>LOGO KLUBU</h1>
-        <img src="fcb2.jpg" alt="Zdjęcie" style="width: 300px; height: 200px;">
-	    
+        <h1>Wesołych Świąt!</h1>
+        <p>Witaj, Drogi Użytkowniku!</p>
+        <img src="mikolaj.jpg" alt="Święty Mikołaj">
     </header>
+
     <nav>
-        <a href="#">Fc Barcelona</a>
-        <a href="https://www.fcbarca.com/tag/barca%20news%20pl">O Nas</a>
-        <a href="https://www.transfermarkt.pl/fc-barcelona/startseite/verein/131">Kadra</a>
-        <a href="https://www.transfermarkt.pl/fc-barcelona/mitarbeiter/verein/131">Sztab</a>
+        <a href="#kolędy">Kolędy</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#gry">Gry</a>
+        <a href="#przepisy">Przepisy</a>
+        <a href="#kontakt">Kontakt</a>
     </nav>
-    <section>
-        <h2>Strona Główna</h2>
-		<img src="fcb3.png" alt="KLUB" style="width: 1300px; height: 1300px;">
-	    
-	     <style>
-        table {
-            font-family: Arial, sans-serif;
-            border-collapse: collapse;
-            width: 50%;
-        }
 
-        th, td {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-
-        tr:nth-child(even) {
-            background-color: #00FFFF;
-        }
-    </style>
-</head>
-	<table>
-    <thead>
-        <tr>
-            <th>Zawodnik</th>
-            <th>Pozycja</th>
-            <th>Narodowość</th>
-            <th>Wartość rynkowa</th>
-	    <th>Kontrakt</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Lewandowski</td>
-            <td>Napastnik</td>
-            <td>Polska</td>
-            <td>30 mln</td>
-	    <td>30 cze 2026</td>
-        </tr>
-        <tr>
-           <td>Ter Stegen</td>
-            <td>Bramkarz</td>
-            <td>Niemcy</td>
-            <td>35 mln</td>
-	    <td>30 cze 2028</td>
-        </tr>
-	<tr>
-            <td>Araujo</td>
-            <td>Obrońca</td>
-            <td>Urugwaj</td>
-            <td>70 mln</td>
-	    <td>30 cze 2026</td>
-        </tr>
-        <tr>
-            <td>Pedri</td>
-            <td>Pomocnik</td>
-            <td>Hiszpania</td>
-            <td>100 mln</td>
-	    <td>30 cze 2026</td>
-        </tr>
-    </tbody>
-</table>
-	    <section id="video-container">
-    <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/SKwn2VMGPw8?si=qzVISLaFdDCTPJ5J" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/3j_daNHio4o?si=9uiCNhzokC9_qvhd" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Ffcbarcelona%2Fvideos%2F200463172575282%2F&show_text=false&width=560&t=0"" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-     <div class="center-container">
-     <h2>Hymn Klubu</h2>
-        <audio controls autoplay>
-            <source src="Hymn FC Barcelony.mp3" type="audio/mp3">
-        </audio>
-    <footer>
-        <p>Tutaj znajdziesz informacje o naszej druzynie.</p>
+    <section id="kolędy">
+        <h2>Kolędy</h2>
+        <ul>
+            <li>
+                <h3>Jingle Bells</h3>
+                <p>Tekst kolędy...</p>
+                <audio controls>
+                    <source src="jingle_bells.mp3" type="audio/mpeg">
+                    Przeglądarka nie obsługuje elementu audio.
+                </audio>
+            </li>
+            <!-- Dodaj kolejne kolędy -->
+        </ul>
     </section>
+
+    <section id="galeria">
+        <h2>Galeria</h2>
+        <div class="gallery">
+            <img src="choinka.jpg" alt="Choinka">
+            <img src="ozdoby.jpg" alt="Ozdoby świąteczne">
+            <img src="prezenty.jpg" alt="Prezenty pod choinką">
+            <!-- Dodaj kolejne zdjęcia -->
+        </div>
+    </section>
+
+    <section id="gry">
+        <h2>Gry Świąteczne</h2>
+        <p>Opisy i zasady gier...</p>
+        <!-- Dodaj gry -->
+    </section>
+
+    <section id="przepisy">
+        <h2>Przepisy</h2>
+        <ul>
+            <li>
+                <h3>Ciasto piernikowe</h3>
+                <p>Składniki: mąka, miód, przyprawy...</p>
+                <p>Kroki do wykonania:...</p>
+            </li>
+            <!-- Dodaj kolejne przepisy -->
+        </ul>
+    </section>
+
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <p>Dane kontaktowe do twórców strony...</p>
+        <p>Śledź nas na <a href="https://facebook.com" target="_blank">Facebooku</a>!</p>
+    </section>
+
     <footer>
-        <p>&copy; 2023 FCB</p>
-        <p>Data: <span id="currentDate"></span></p>
-        <script>
-            // JavaScript, który automatycznie ustawia aktualną datę
-            const currentDateElement = document.getElementById('currentDate');
-            const currentDate = new Date();
-            const year = currentDate.getFullYear();
-            const month = (currentDate.getMonth() + 1).toString().padStart(2, '0');
-            const day = currentDate.getDate().toString().padStart(2, '0');
-            currentDateElement.textContent = `${day}.${month}.${year}`;
-        </script>
+        &copy; 2024 Świąteczna Strona. Wszelkie prawa zastrzeżone.
     </footer>
+
 </body>
 </html>
