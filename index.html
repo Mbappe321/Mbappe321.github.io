@@ -232,7 +232,7 @@
                 <p>Składniki: mąka, miód, przyprawy...</p>
                 <p>Kroki do wykonania:...</p>
             </li>
-            <!-- Add more recipes -->
+            <
         </ul>
     </section>
 
@@ -241,7 +241,63 @@
         <p>Dane kontaktowe do twórców strony...</p>
         <p>Śledź nas na <a href="https://facebook.com" target="_blank">Facebooku</a>!</p>
     </section>
+<style>
+        body {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           height: 200vh;
+           margin: 0;
+           background-color: #87CEEB; 
+       }
+    
+      
+       header,nav, section, footer {
+           max-width: 1000px; 
+           width: 100%;
+           padding: 20px;
+           background-color: rgb(196, 24, 24); 
+           margin: 10px;
+           border-radius: 10px;
+           box-shadow: 0 0 10px rgba(129, 48, 48, 0.1); 
 
+
+
+       }
+       #galeria img {
+            max-width: 100%;
+            height: auto;
+            border: 5px solid #ffffff; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+            margin: 10px;
+     }
+     body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 300vh;
+            margin: 0;
+        }
+
+        #board {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-gap: 5px;
+        }
+
+        .cell {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    </style>
     <footer>
         &copy; 2024 Świąteczna Strona. Wszelkie prawa zastrzeżone.
     </footer>
