@@ -22,19 +22,17 @@
         nav {
             background-color: #333;
             overflow: hidden;
-             margin-right: auto;
-             margin-left: auto;
+            text-align: center; /* Center align text */
         }
 
         nav a {
-            float: left;
-            display: block;
+            display: inline-block;
             color: #f2f2f2;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
-             margin-right: auto;
-             margin-left: auto;
+            margin: 0 10px; /* Add margin for spacing */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition */
         }
 
         nav a:hover {
@@ -44,6 +42,7 @@
 
         section {
             padding: 20px;
+            text-align: center; /* Center align text */
         }
 
         footer {
@@ -78,13 +77,11 @@
     </header>
 
     <nav>
-        <center>
         <a href="#kolędy">Kolędy</a>
         <a href="#galeria">Galeria</a>
         <a href="#gry">Gry</a>
         <a href="#przepisy">Przepisy</a>
         <a href="#kontakt">Kontakt</a>
-        </center>
     </nav>
 
     <section id="kolędy">
@@ -92,33 +89,15 @@
         <ul>
             <li>
                 <h3>Cicha noc</h3>
-<p>Tekst kolędy...
-1. Cicha noc, święta noc
-pokój niesie ludziom wszem.
- A u żłóbka Matka Święta
-czuwa sama uśmiechnięta
-  nad Dzieciątka snem. x2
-2. Cicha noc, święta noc.
-Pastuszkowie od swych trzód
-biegną wielce zadziwieni,
-za anielskich głosem pieni,
-gdzie się spełnił cud. x2
-3. Cicha noc, święta noc.
-Narodzony Boży Syn –
-Pan wielkiego majestatu,
-niesie dziś całemu światu
-odkupienie win. x2
-4. Cicha noc, święta noc,
-jakiż w tobie dzisiaj cud,
-w Betlejem Dziecina święta
-wznosi w górę swe rączęta,
-błogosławi lud. x2</p>
+                <p>Tekst kolędy...
+                    <!-- Add your carol lyrics here -->
+                </p>
                 <audio controls>
                     <source src="Cicha noc - Kol_da.mp3" type="audio/mpeg">
                     Przeglądarka nie obsługuje elementu audio.
                 </audio>
             </li>
-            <!-- Dodaj kolejne kolędy -->
+            <!-- Add more carols -->
         </ul>
     </section>
 
@@ -128,14 +107,14 @@ błogosławi lud. x2</p>
             <img src="choinka.png" alt="Choinka">
             <img src="ozdoby2.jpg" alt="Ozdoby świąteczne">
             <img src="prezenty pod choinka.jpg" alt="Prezenty pod choinką">
-            <!-- Dodaj kolejne zdjęcia -->
+            <!-- Add more images -->
         </div>
     </section>
 
     <section id="gry">
         <h2>Gry Świąteczne</h2>
         <p>Opisy i zasady gier...</p>
-        <!-- Dodaj gry -->
+        <!-- Add your games here -->
     </section>
 
     <section id="przepisy">
@@ -146,7 +125,7 @@ błogosławi lud. x2</p>
                 <p>Składniki: mąka, miód, przyprawy...</p>
                 <p>Kroki do wykonania:...</p>
             </li>
-            <!-- Dodaj kolejne przepisy -->
+            <!-- Add more recipes -->
         </ul>
     </section>
 
@@ -162,3 +141,4 @@ błogosławi lud. x2</p>
 
 </body>
 </html>
+
