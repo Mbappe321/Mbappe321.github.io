@@ -3,404 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Świąteczna Strona</title>
+    <title>Moje Projekty</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f7f7f7;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            background-image: url('background.jpg');
-            background-size: cover;
-            background-position: center;
+            background-color: #f4f4f4;
         }
-
         header {
-            background-color: #d9534f;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            width: 100%;
-        }
-
-        nav {
             background-color: #333;
-            overflow: hidden;
+            color: white;
+            padding: 10px 20px;
             text-align: center;
-            width: 100%;
         }
-
-        nav a {
-            display: inline-block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            margin: 0 10px;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        section {
+        .container {
             padding: 20px;
-            text-align: center;
+        }
+        .personal-info, .projects {
+            margin-bottom: 20px;
+        }
+        .personal-info h2, .projects h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        table {
             width: 100%;
+            border-collapse: collapse;
         }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            width: 100%;
+        table, th, td {
+            border: 1px solid #ddd;
         }
-
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+        th, td {
+            padding: 8px;
+            text-align: left;
         }
-
-        .gallery img {
-            width: 30%;
-            margin: 10px;
-            border-radius: 5px;
+        th {
+            background-color: #f2f2f2;
         }
-    </style>
-</head>
-<body>
-
-    <header>
-        <h1>Wesołych Świąt!</h1>
-        <p>Witaj, Drogi Użytkowniku!</p>
-        <img src="mikolaj.jpeg" alt="Święty Mikołaj">
-    </header>
-
-    <nav>
-        <a href="#kolędy">Kolędy</a>
-        <a href="#galeria">Galeria</a>
-        <a href="#gry">Gry</a>
-        <a href="#przepisy">Przepisy</a>
-        <a href="#kontakt">Kontakt</a>
-    </nav>
-
-    <section id="kolędy">
-        <h2>Kolędy</h2>
-        <ul>
-            <li>
-                <h3>Cicha noc</h3>
-                <p>Tekst kolędy: Cicha noc święta noc
-Pokój niesie ludziom wszem
-A u żłóbka Matka Święta
-Czuwa sama uśmiechnięta
-Nad dzieciątka snem
-Nad dzieciątka snem
-Cicha noc święta noc
-Pastuszkowie od swych trzód
-Biegną wielce zadziwieni
-Za anielskim głosem pieni
-Gdzie się spełnił cud
-Gdzie się spełnił cud
-Cicha noc święta noc
-Narodzony Boży Syn
-Pan Wielkiego majestatu
-Niesie dziś całemu światu
-Odkupienie win
-Odkupienie win</p>
-                <audio controls>
-                    <source src="Cicha noc - Kol_da.mp3" type="audio/mpeg">
-                    Przeglądarka nie obsługuje elementu audio.
-                </audio>
-
-                 <h3>Wśród nocnej ciszy</h3>
-                Wśród nocnej ciszy głos się rozchodzi
-Wstańcie, pasterze, Bóg się wam rodzi!
-Czym prędzej się wybierajcie
-Do Betlejem pospieszajcie
-Przywitać Pana
-Czym prędzej się wybierajcie
-Do Betlejem pospieszajcie
-Przywitać Pana
-Poszli, znaleźli Dzieciątko w żłobie
-Z wszystkimi znaki danymi sobie
-Jako Bogu cześć Mu dali
-A witając zawołali
-Z wielkiej radości
-Jako Bogu cześć Mu dali
-A witając zawołali
-Z wielkiej radości
-Ach, witaj Zbawco z dawna żądany
-Cztery tysiące lat wyglądany
-Na Ciebie króle, prorocy
-Czekali, a Tyś tej nocy
-Nam się objawił
-Na Ciebie króle, prorocy
-Czekali, a Tyś tej nocy
-Nam się objawił
-I my czekamy na Ciebie, Pana (hej)
-A skoro przyjdziesz na głos kapłana
-Padniemy na twarz przed Tobą
-Wierząc, żeś jest pod osłoną
-Chleba i wina
-Padniemy na twarz przed Tobą
-Wierząc, żeś jest pod osłoną
-Chleba i wina (hej)
-Chleba i wina
-        
-            </li>
-          
-        </ul>
-    </section>
-
-    <section id="galeria">
-        <h2>Galeria</h2>
-        <div class="gallery">
-            <img src="choinka.png" alt="Choinka">
-            <img src="ozdoby2.jpg" alt="Ozdoby świąteczne">
-            <img src="prezenty pod choinka.jpg" alt="Prezenty pod choinką">
-          
-        </div>
-    </section>
-
-    <section id="gry">
-        <h2>Gry Świąteczne</h2>
-        <p>Opisy i zasady gier...</p>
-       <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kółko i Krzyżyk</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            text-align: center;
-            margin: 50px;
-        }
-
-        #board {
-            display: grid;
-            grid-template-columns: repeat(3, 100px);
-            grid-template-rows: repeat(3, 100px);
-            gap: 5px;
-        }
-
-        .cell {
+        img {
             width: 100px;
-            height: 100px;
-            border: 2px solid #000;
-            font-size: 2em;
-            cursor: pointer;
-        }
-
-        .cell:hover {
-            background-color: #eee;
-        }
-    </style>
-</head>
-<body>
-
-    <h1>Kółko i Krzyżyk</h1>
-
-    <div id="board"></div>
-
-    <script>
-        // Initialize the board
-        const board = document.getElementById('board');
-        let currentPlayer = 'X';
-        let cells = Array.from({ length: 9 });
-
-        for (let i = 0; i < 9; i++) {
-            const cell = document.createElement('div');
-            cell.classList.add('cell');
-            cell.dataset.index = i;
-            cell.addEventListener('click', handleCellClick);
-            board.appendChild(cell);
-            cells[i] = cell;
-        }
-
-        // Handle cell click
-        function handleCellClick(event) {
-            const clickedCell = event.target;
-            const index = clickedCell.dataset.index;
-
-            if (!cells[index].textContent) {
-                cells[index].textContent = currentPlayer;
-                checkWinner();
-                currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-            }
-        }
-
-        // Check for a winner
-        function checkWinner() {
-            const winningCombos = [
-                [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
-                [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
-                [0, 4, 8], [2, 4, 6] // Diagonals
-            ];
-
-            for (const combo of winningCombos) {
-                const [a, b, c] = combo;
-                if (cells[a].textContent && cells[a].textContent === cells[b].textContent && cells[a].textContent === cells[c].textContent) {
-                    alert(`${cells[a].textContent} is the winner!`);
-                    resetGame();
-                    return;
-                }
-            }
-
-            if (cells.every(cell => cell.textContent)) {
-                alert("It's a tie!");
-                resetGame();
-            }
-        }
-
-        // Reset the game
-        function resetGame() {
-            cells.forEach(cell => {
-                cell.textContent = '';
-            });
-            currentPlayer = 'X';
-        }
-    </script>
-
-</body>
-</html>
-
-    </section>
-
-    <section id="przepisy">
-        <h2>Przepisy</h2>
-        <ul>
-            <li>
-                <h3>Sernik</h3>
-                <p>Składniki: 
-Składniki
-
-    1 kg zmielonego twarogu
-    250 g miękkiego masła
-    1 i 1/3 szklanki cukru pudru
-    6 jajek
-    1 opakowanie cukru wanilinowego
-    150 ml śmietanki 36%
-    4 łyżki mąki ziemniaczanej
-
-</p>
-                <p>
-Przygotowanie
-
-    Miękkie masło ubić na puszysto, stopniowo dodawać po jednym żółtku na przemian z łyżką cukru pudru, cały czas dokładnie ubijając składniki.
-    Zmniejszyć obroty miksera do średnich, dodać zmielony ser i połączyć. Teraz dodawać po kolei: cukier wanilinowy, śmietankę oraz mąkę ziemniaczaną cały czas miksując składniki na jednolitą masę. Na koniec wymieszać (delikatnie, ale dokładnie) z ubitymi na sztywno białkami.
-    Przygotować tortownicę o średnicy minimum 26 cm (mierzona od środka). Posmarować ją masłem i wysypać bułką tartą lub mielonymi migdałami lub dno wyłożyć papierem do pieczenia.
-    Masę serową wyłożyć do tortownicy i wstawić do piekarnika nagrzanego do 170 stopni C. Piec przez 60 minut. Sernik studzić stopniowo wyjmując z piekarnika (najpierw po trochu otwierając drzwiczki i lekko wysuwając sernik, w końcu wyjąć z piekarnika). Zrumieniony wierzch sernika posypać cukrem pudrem lub polać polewą czekoladową.
-
-</p>
-                <h3>Pierniki</h3>
-                <p>
-Składniki
-ok. 30 sztuk
-
-    2 szklanki (320 g) mąki pszennej
-    2 łyżki miodu
-    2/3 szklanki cukru
-    1,5 łyżeczki sody oczyszczonej
-    1/2 łyżeczki kakao (niekoniecznie)
-    20 g (1 torebka) przyprawy piernikowej (najłatwiej gotowej lub domowej)
-    2 łyżki masła
-    1 jajko (+ dodatkowo 1 jajko do posmarowania)
-    ok. 4 łyżek ciepłego mleka
-
-</p>
-                <p>
-Przygotowanie
-
-    Mąkę przesiać na stolnicę, wlać rozpuszczony gorący miód i wymieszać (najlepiej nożem). Ciągle siekając, dodawać kolejno cukier, sodę, kakao i przyprawy, a następnie masło i jedno jajko.
-    Dolewać stopniowo (po 1 łyżce) mleka i łączyć składniki ciasta w jednolitą, miękką kulę (dolewamy tyle mleka aby ciasto łatwo się wyrabiało i było plastyczne, można nie wykorzystać całego mleka albo dodać troszkę więcej). Następnie wyrabiać ręką przez około 10 minut.
-    Na posypanej mąką stolnicy rozwałkować ciasto na placek o grubości ok. 1/2 cm. Foremkami wykrajać pierniczki. Układać na blasze wyłożonej papierem do pieczenia w odstępach około 2 cm od siebie.
-    Wierzch posmarować roztrzepanym jajkiem (niekoniecznie jeśli pierniczki będziemy dekorować) i piec w piekarniku nagrzanym do 180 stopni (góra i dół bez termoobiegu) przez ok. 10 minut.
-
-</p>
-            </li>
-            <
-        </ul>
-    </section>
-
-    <section id="kontakt">
-        <h2>Kontakt</h2>
-        <p>Dane kontaktowe do twórców strony...</p>
-        <p>Śledź nas na <a href="https://facebook.com" target="_blank">Facebooku</a>!</p>
-    </section>
-<style>
-        body {
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-           justify-content: center;
-           height: 200vh;
-           margin: 0;
-           background-color: #87CEEB; 
-       }
-    
-      
-       header,nav, section, footer {
-           max-width: 1000px; 
-           width: 100%;
-           padding: 20px;
-           background-color: rgb(196, 24, 24); 
-           margin: 10px;
-           border-radius: 10px;
-           box-shadow: 0 0 10px rgba(129, 48, 48, 0.1); 
-
-
-
-       }
-       #galeria img {
-            max-width: 100%;
             height: auto;
-            border: 5px solid #ffffff; 
-            border-radius: 8px; 
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
-            margin: 10px;
-     }
-     body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 300vh;
-            margin: 0;
-        }
-
-        #board {
-            display: grid;
-            grid-template-columns: repeat(3, 100px);
-            grid-gap: 5px;
-        }
-
-        .cell {
-            width: 100px;
-            height: 100px;
-            border: 1px solid #000;
-            font-size: 24px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
         }
     </style>
-    <footer>
-        &copy; 2024 Świąteczna Strona. Wszelkie prawa zastrzeżone.
-    </footer>
+</head>
+<body>
+    <header>
+        <h1>Moje Projekty</h1>
+    </header>
+    <div class="container">
+        <section class="personal-info">
+            <h2>Informacje o uczniu</h2>
+            <p><strong>Imię i nazwisko:</strong> Jakub Marzec </p>
+            <p><strong>Klasa:</strong> 5 TI</p>
+        </section>
 
+        <section class="projects">
+            <h2>Moje Projekty</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Projekt</th>
+                        <th>Miniatura</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024-09-15</td>
+                        <td>Projekt 1</td>
+                        <td><img src="" alt="Miniaturka Projektu 1"></td>
+                    </tr>
+                    <tr>
+                        <td>2024-09-16</td>
+                        <td>Projekt 2</td>
+                        <td><img src="" alt="Miniaturka Projektu 2"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
 </body>
 </html>
-
 
 
